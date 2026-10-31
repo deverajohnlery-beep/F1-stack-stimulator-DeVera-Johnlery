@@ -1,0 +1,92 @@
+/* Main background */
+body {
+    background-color: #495579;
+}
+
+/* Queue container */
+#queue {
+    align-items: center;
+    min-height: 250px;
+    padding: 10px;
+}
+
+/* Queue elements */
+.push {
+    width: 70px;
+    min-height: 50px;
+    border-radius: 5px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+/* Deleted queue elements */
+.pop {
+    width: 70px;
+    min-height: 50px;
+    border-radius: 5px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+/* Deleted queue container */
+.popped {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+    padding: 10px;
+}
+
+/* Original background colors */
+.bg-7B8FA1 {
+    background-color: #7B8FA1;
+}
+
+.bg-9C254D {
+    background-color: #9C254D;
+}
+
+/* Message display */
+#message {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* Highlight front element during Peek */
+#queue .bg-warning {
+    background-color: #ffc107 !important;
+    color: #000000 !important;
+    border: 2px solid #ffffff !important;
+}
+
+/* Button appearance */
+button {
+    font-weight: bold !important;
+}
+
+/* Queue elements animation */
+#queue .push {
+    animation: appear 0.2s ease-in;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
